@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cocktails', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('content')->unique();
+            $table->text('content');
             $table->string('image')->nullable();
             $table->timestamps();
         });
