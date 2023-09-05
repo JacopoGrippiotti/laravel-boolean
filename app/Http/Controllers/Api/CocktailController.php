@@ -10,7 +10,7 @@ class CocktailController extends Controller
 {
     public function index(){
 
-        $cocktails = Cocktail::all()->paginate(20);
+        $cocktails = Cocktail::paginate(20);
 
         return response()->json(
             [
