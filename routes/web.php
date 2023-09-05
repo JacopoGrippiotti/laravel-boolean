@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/cocktails', CocktailController::class);
+
 
 
