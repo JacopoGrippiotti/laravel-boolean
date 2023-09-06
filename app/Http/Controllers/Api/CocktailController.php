@@ -19,4 +19,13 @@ class CocktailController extends Controller
             ]
         );
     }
+
+    public function show($id){
+        $cocktail = Cocktail::findOrFail($id);
+
+        return response()->json([
+            'success' => true,
+            'results' => $cocktail
+        ]);
+    }
 }
